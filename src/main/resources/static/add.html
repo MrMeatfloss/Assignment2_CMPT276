@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Rectangle</title>
+    <link rel="stylesheet" type="text/css" href="/add.css">
+</head>
+<body>
+    <h1 class="text-center mt-5 mb-4">New Rectangle</h1>
+    <form action="/rectangles/add" method="post">
+
+        <div class="nameInput">
+            <input type="text" id="name" name="name" placeholder="Name">
+        </div>
+        <div class="colorInput">
+            <input type="text" id="color" name="color" placeholder="Color">
+        </div>
+        <div class="widthInput">
+            <input type="number" id="width" name="width" placeholder="Width">
+        </div>
+        <div class="heightInput">
+            <input type="number" id="height" name="height" placeholder="Height">
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="SEND">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+th, td {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    background-color:gainsboro;
+}
+
+body {
+    background-color: lightblue;
+}
+

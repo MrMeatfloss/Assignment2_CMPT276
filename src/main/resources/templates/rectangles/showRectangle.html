@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/showRectangle.css">
+    <title>Rectangle</title>
+</head>
+<body>
+    <form action="/rectangles/update" method="post" th:object="${rectangle}">
+        <input type="hidden" name="recId" th:field="${rectangle.uid}">
+
+        <p>Name: </p>
+        <input type="text" name="recName" required placeholder="Rectangle Name" th:field="${rectangle.name}"> 
+
+        <p>Color: </p>
+        <input type="text" name="recColor" required placeholder="Rectangle Color" th:field="${rectangle.color}">
+
+        <p>Width: </p>
+        <input type="number" name="recWidth" required placeholder="Rectangle Width" th:field="${rectangle.width}">
+
+        <p>Height: </p>
+        <input type="number" name="recHeight" required placeholder="Rectangle Height" th:field="${rectangle.height}">
+
+        <br>
+        <br>
+        <button type="submit">Confirm</button>
+    </form>
+</body>
+</html>
